@@ -17,20 +17,6 @@
 import csv
 import os
 
-#Value storage
-votes = []
-votes_count = 0
-sum_votes = set()
-candidates = []
-candidate_names = []
-sum_candidates = 0
-candidate_percent = 0
-max_votes = ()
-sumvote1 = set()
-sumvote2 = []
-sumvote3 = 0
-sumvote4 = 0
-winner = ()
 #Path to election data.csv from Resources folder
 data_csv = os.path.join("Resources", "election_data.csv")
 
@@ -41,16 +27,18 @@ with open(data_csv, 'r') as datafile:
     
     #Skip header
     csv_header = next(csv_reader)
-          
+    votes = list(csv_reader)
+    #Tally votes
+    votes_count = len(votes) 
+    print(votes_count)     
+    
     for row in csv_reader:
-        #Tally votes
-        votes_count += 1
-        votes = (row[2])
+       candidates.append(row[2]) 
         #Get candidate names
-        if votes in candidate_names: 
+    if (row[2]) not in candidate_names: 
             candidates.append(row[2])
             candidate_names = dict.fromkeys(candidates)
-        print(candidate_names)
+    print(candidate_names)
             
         
         
