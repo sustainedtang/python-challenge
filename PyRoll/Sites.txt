@@ -1,0 +1,4 @@
+https://www.datacamp.com/community/tutorials/python-list-index
+https://www.geeksforgeeks.org/python-get-unique-values-list/
+https://www.programiz.com/python-programming/methods/list/count
+https://www.freecodecamp.org/news/python-unique-list-how-to-get-all-the-unique-values-in-a-list-or-array/

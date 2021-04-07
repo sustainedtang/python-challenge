@@ -92,8 +92,8 @@ with open(budget_analysis, 'w', newline='') as txtdoc:
 
     txtdoc.write('Financial Analysis\n')
     txtdoc.write('---------------------------\n')
-    txtdoc.write('Total Months: '+str(count_months))
-    txtdoc.write('Total: $'+str(sum_profits))
-    txtdoc.write('Average Change: '+str(average_change))
-    txtdoc.write('Greatest Increase in Profits: '+increase_month +' $' +str(increasemax))
-    txtdoc.write('Greatest Decrease in Losses: '+decrease_month +' $' +str(decreasemax))
+    txtdoc.write('Total Months: '+str(count_months)+'\n')
+    txtdoc.write('Total: $'+str(sum_profits)+'\n')
+    txtdoc.write('Average Change: '+str(average_change)+'\n')
+    txtdoc.write('Greatest Increase in Profits: '+increase_month +' $' +str(increasemax)+'\n')
+    txtdoc.write('Greatest Decrease in Losses: '+decrease_month +' $' +str(decreasemax)+'\n')
